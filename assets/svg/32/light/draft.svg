@@ -1,5 +1,5 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_197_3462)">
+<g clip-path="url(#clip0_197_3462)" filter="url(#filter0_d_197_3462)">
 <mask id="path-1-outside-1_197_3462" maskUnits="userSpaceOnUse" x="4.51466" y="4.7868" width="22.6274" height="22.6274" fill="black">
 <rect fill="white" x="4.51466" y="4.7868" width="22.6274" height="22.6274"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1816 17.4544L9.81796 22.818C9.81796 22.818 15.8284 20.3431 18.6568 20.3431C20.071 16.1005 22.1923 13.9792 22.1923 13.9792L17.9497 9.73654C17.9497 9.73654 15.8284 11.8579 11.5857 13.2721C11.5857 16.1005 9.11085 22.1109 9.11085 22.1109L14.4745 16.7473C14.2082 16.1897 14.3059 15.5017 14.7677 15.0398C15.3535 14.4541 16.3032 14.4541 16.889 15.0398C17.4748 15.6256 17.4748 16.5754 16.889 17.1612C16.4272 17.623 15.7392 17.7207 15.1816 17.4544ZM24.3136 11.8579L22.8994 13.2721L18.6568 9.02944L20.071 7.61522L24.3136 11.8579Z"/>
@@ -17,5 +17,8 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_197_3462"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_197_3462" result="shape"/>
 </filter>
+<clipPath id="clip0_197_3462">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
 </defs>
 </svg>
