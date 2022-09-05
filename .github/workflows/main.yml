@@ -10,29 +10,29 @@ jobs:
 
       - name: Generate variants and assets from Figma file
         id: figma_cursor_theme
-        uses: phisch/figma-cursor-theme-action@v1.1
+        uses: druskus20/figma-cursor-theme-action-single@single
         with:
           figma_access_token: ${{ secrets.FIGMA_ACCESS_TOKEN }}
           figma_file_key: ${{ secrets.FIGMA_FILE_KEY }}
           alias_component_set_id: ${{ secrets.ALIAS_COMPONENT_SET_ID }}
           sprite_component_set_id: ${{ secrets.SPRITE_COMPONENT_SET_ID }}
-          theme_name: 'Phinger Cursors'
-          theme_comment: 'The most over engineered cursor theme.'
-          theme_directory: 'build/themes'
-          export_directory: 'build/exports'
-          svg_directory: 'build/exports/svg'
+          theme_name: "Phinger Cursors"
+          theme_comment: "The most over engineered cursor theme."
+          theme_directory: "build/themes"
+          export_directory: "build/exports"
+          svg_directory: "build/exports/svg"
 
       - name: Update assets
         run: |
           rm -rf assets
           mv build/exports assets
-          
+
       - name: Push updated assets
         uses: EndBug/add-and-commit@v7
         with:
-          add: 'assets'
+          add: "assets"
           default_author: github_actor
-          message: 'updated assets from figma file version ${{ steps.figma_cursor_theme.outputs.version }}'
+          message: "updated assets from figma file version ${{ steps.figma_cursor_theme.outputs.version }}"
 
       - name: Compress variants
         run: tar -cjf build/phinger-cursors-variants.tar.bz2 -C build/themes .
